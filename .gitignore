@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.zip
+*.h5
+cats_and_dogs/
+cats_and_dogs_filtered/
+.DS_Store
+*.swp
+*.swo
