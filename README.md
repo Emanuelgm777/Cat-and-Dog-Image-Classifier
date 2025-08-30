@@ -1,85 +1,78 @@
-🐶🐱 Cat and Dog Image Classifier
+Cat and Dog Image Classifier
+Descripción
 
-Clasificador de imágenes de gatos y perros utilizando redes neuronales convolucionales (CNN). Este proyecto muestra preprocesamiento de imágenes, entrenamiento de modelo con Keras/TensorFlow y evaluación de rendimiento.
+El Cat and Dog Image Classifier es un proyecto de clasificación de imágenes que utiliza un modelo de Red Neuronal Convolucional (CNN) para clasificar imágenes de gatos y perros. El modelo es entrenado utilizando un conjunto de datos de imágenes etiquetadas y puede predecir si una imagen dada contiene un gato o un perro. Este proyecto está implementado en Python utilizando TensorFlow y Keras, dos bibliotecas populares para el desarrollo de redes neuronales profundas.
 
-📌 Resumen del Proyecto
+Características
 
-Este proyecto entrena un modelo de Deep Learning para diferenciar entre gatos y perros a partir de un dataset de imágenes. Incluye pasos de:
+Clasificación binaria: El modelo clasifica las imágenes en dos categorías: gatos y perros.
 
-Limpieza y organización de datos.
+Red Neuronal Convolucional (CNN): Se utiliza una red neuronal convolucional para procesar las imágenes y aprender patrones visuales importantes.
 
-Generadores de imágenes para entrenamiento y validación.
+Entrenamiento y Evaluación: El modelo se entrena con un conjunto de datos etiquetado, y se evalúa utilizando métricas como precisión y recall.
 
-Arquitectura CNN en TensorFlow/Keras.
+Predicciones: El modelo puede predecir si una imagen contiene un gato o un perro con alta precisión.
 
-Visualización de curvas de precisión y pérdida.
+Tecnologías utilizadas
 
-Evaluación final sobre datos de prueba.
+Python: Para la implementación del modelo de red neuronal y el procesamiento de imágenes.
 
-🧰 Stack Tecnológico
-Herramienta	Uso
-Python 3.x	Lenguaje principal
-TensorFlow / Keras	Definición y entrenamiento del modelo CNN
-NumPy	Operaciones numéricas
-Matplotlib	Gráficas de entrenamiento y resultados
-scikit-learn	Métricas de evaluación
-📁 Estructura de Archivos
-Cat-and-Dog-Image-Classifier/
-├── data/                      # Dataset (train/val/test)
-├── models/                    # Modelos entrenados (H5)
-├── notebooks/                 # Jupyter notebooks (opcional)
-├── cat_dog_classifier.py      # Script principal de entrenamiento
-├── requirements.txt           # Dependencias del proyecto
-├── results.png                # Ejemplo de curvas de entrenamiento
-└── README.md                  # Documentación
+TensorFlow y Keras: Para crear, entrenar y evaluar el modelo de Red Neuronal Convolucional (CNN).
 
-🚀 Cómo Ejecutar
-1) Clonar el repositorio
-git clone https://github.com/Emanuelgm777/Cat-and-Dog-Image-Classifier.git
-cd Cat-and-Dog-Image-Classifier
+OpenCV: Para el procesamiento de imágenes y preprocesamiento antes de alimentarlas al modelo.
 
-2) Crear entorno virtual (opcional)
-python -m venv .venv
-source .venv/bin/activate  # macOS/Linux
-.venv\Scripts\activate     # Windows
+Matplotlib/Seaborn: Para la visualización de los resultados de la clasificación y la evaluación del modelo.
 
-3) Instalar dependencias
-pip install -r requirements.txt
+Cómo usar el proyecto
 
-4) Entrenar el modelo
-python cat_dog_classifier.py --epochs 20 --batch_size 32
+Clonar el repositorio
+Si deseas clonar este proyecto, usa el siguiente comando:
 
-5) Evaluar resultados
+git clone <repositorio_url>  
 
-Se generarán gráficos de precisión y pérdida en results.png.
-El modelo entrenado quedará guardado en la carpeta models/.
 
-✅ Características Clave
+Instalar las dependencias
+Instala las bibliotecas necesarias ejecutando:
 
-Entrenamiento reproducible con TensorFlow/Keras.
+pip install -r requirements.txt  
 
-Generadores de imágenes con ImageDataGenerator.
 
-Visualización de métricas (accuracy, loss).
+Entrenar el modelo
 
-Código modular y extensible.
+Para entrenar el modelo, ejecuta el archivo train_model.py. Este archivo se encargará de cargar el conjunto de datos, procesar las imágenes, y entrenar el modelo CNN.
 
-🧠 Qué Aprenderás
+Realizar predicciones
 
-Cómo aplicar CNN en clasificación de imágenes.
+Para realizar predicciones sobre nuevas imágenes, ejecuta el archivo predict_image.py y proporciona la ruta a la imagen que deseas clasificar.
 
-Técnicas de data augmentation.
+El modelo devolverá la predicción de si la imagen contiene un gato o un perro.
 
-Uso de métricas de evaluación para visión por computadora.
+Evaluar el modelo
 
-🌍 Aplicaciones Reales
+El archivo evaluate_model.py permite evaluar el rendimiento del modelo utilizando métricas como precisión, recall y F1-score para verificar la efectividad de la clasificación.
 
-Clasificación de imágenes en sistemas inteligentes.
+Instalación
 
-Modelos de visión computacional para mascotas y animales.
+Clona el repositorio y navega a la carpeta del proyecto.
 
-Base para proyectos de detección más complejos (p. ej., perros/gatos en tiempo real).
+Ejecuta pip install -r requirements.txt para instalar las dependencias necesarias.
 
-✍️ Autor
+Asegúrate de tener un entorno de Python 3.x para que las bibliotecas funcionen correctamente.
 
-Emanuel González Michea
+Contribuciones
+
+Si deseas contribuir al proyecto, sigue estos pasos:
+
+Haz un fork del repositorio.
+
+Crea una rama para tu nueva funcionalidad o corrección de errores (git checkout -b nueva-funcionalidad).
+
+Haz tus cambios y realiza un commit (git commit -am 'Añadir nueva funcionalidad').
+
+Push a tu rama (git push origin nueva-funcionalidad).
+
+Abre una pull request detallando los cambios realizados.
+
+Licencia
+
+Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para obtener más detalles.
